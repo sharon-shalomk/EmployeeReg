@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Home Page</title>
+    <style>
+      body {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(206, 206, 206, 1) 66%,
+          rgba(220, 212, 202, 0.5439425770308124) 100%
+        );
+
+      }
+      .container {
+        background-color: #ffff;
+        border-radius: 5px;
+     
+      }
+      .button {
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="container w-50 mt-5">
+      <h4 class="text-center p-4">Home Page</h4>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Search</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="search"
+            aria-describedby="emailHelp"
+            placeholder="Employee Id"
+          />
+        </div>
+        <div class="button">
+          <button onclick="displayData()" type="button" class="btn btn-primary mb-3">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container w-50 mt-4 p-5 text-white" id="result" style="background: #f1ecec31;border-radius: 10px;"></div>
+  
+
+   <script src="./employee.js"></script>
+  </body>
+</html>
